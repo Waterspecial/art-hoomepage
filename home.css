@@ -154,6 +154,54 @@ footer address{
 }
 
 
+/* Styling the Header and Navbar */
+.header{
+    background-color: var(--color5);
+}
+header{
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+nav li{
+    flex-basis: 48%;
+    margin-bottom:0.5rem ;
+}
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+nav li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--color10);
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem;
+}
+nav li:first-child a{
+    background-color: transparent;
+}
+
+
+
+
 @media (min-width: 550px) {
 
     #collections ul{
@@ -185,6 +233,26 @@ footer address{
         flex-basis: 65.5%;
         order: 2;
     }
+    header{
+        padding: 3rem;
+    }
+    nav ul{
+        justify-content: center;
+        gap: 1.2em;
+    }
+    nav li{
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+    nav li a{
+        color: var(--color1);
+        background-color: transparent;
+        padding: 0;
+    }
+    nav li a:hover{
+        color:var(--color2);
+        background-color: transparent;
+    }
 
 }
 
@@ -210,6 +278,20 @@ footer address{
     }
     address{
         flex-basis: 65.5%;
+    }
+    nav ul{
+        justify-content: flex-end;
+    }
+    nav li:first-child{
+        flex-basis: auto;
+        margin: 0 auto;
+        order: 2;
+    }
+    nav li:nth-child(2),nav li:nth-child(3){
+        order: 1;
+    }
+    nav li:nth-child(4),nav li:nth-child(5){
+        order: 3;
     }
 }
 
