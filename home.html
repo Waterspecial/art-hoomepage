@@ -13,7 +13,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#"><img src="/img/header-logo.svg" alt="Wall of Wonder"></a>
+                        <a href="#"><img src="./img/header-logo.svg" alt="Wall of Wonder"></a>
                     </li>
                     <li><a href="#">Collections</a></li>
                     <li><a href="#">About</a></li>
@@ -23,6 +23,13 @@
             </nav>
         </header>
     </div>
+    <section id="hero">
+        <picture>
+            <source srcset="./img/hero-1200.png" media="(min-width: 839px)">
+            <source srcset="./img/hero-838.png" media="(min-width: 301px)">
+            <img src="img/hero-300.png" alt="Rainbow hero image bannner">
+        </picture>
+    </section>
     <section id="mission">
         <h2>Our Mission</h2>
         <div class="missiontext">
@@ -38,11 +45,23 @@
         </div>
     </section>
 
+    <section id="featured">
+        <h2>Featured Print</h2>
+        <figure class="color6">
+            <img sizes="(min-width: 300px) 33.3vw, 100vw"
+            srcset="./img/too-cool-300.jpg 300w,
+            ./img/too-cool-740.jpg 740w,
+            ./img/too-cool-1058.jpg 1058w,
+            ./img/too-cool-1200.jpg 1200w"
+            src="./img/too-cool-1200.jpg" alt="Closeup of woman in sunglasses showwing eyes, nose, and fingers over mouth"> 
+            <figcaption><a href="#">Too Cool for School</a></figcaption>
+        </figure>
+    </section>
+
     <section id="collections">
         <h2>Collections</h2>
 
         <ul>
-
             <li>
                 <figure class="color7">
                     <img src="./img/pop-art.jpg" alt="Pop Art: This must be the place">
